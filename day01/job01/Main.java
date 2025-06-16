@@ -1,21 +1,19 @@
-package day01.job00;
+package day01.job01;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        char lettre = 'A';
-        String message = "Bonjour";
-        int nombre = 42;
-        long grandNombre = 123456789L;
-        float reel = 3.14f;
-        boolean estVrai = true;
+        // Création d'un objet Scanner pour lire depuis le clavier
+        Scanner scanner = new Scanner(System.in);
 
-        System.out.println("char : " + lettre);
-        System.out.println("String : " + message);
-        System.out.println("int : " + nombre);
-        System.out.println("long : " + grandNombre);
-        System.out.println("float : " + reel);
-        System.out.println("boolean : " + estVrai);
+        // Demande à l'utilisateur de saisir quelque chose
+        System.out.print("Veuillez saisir un texte : ");
+        String saisie = scanner.nextLine();  // Lit une ligne de texte
 
-        int TOTO = (int) 3.817;
-        System.out.println("TOTO : " + TOTO);
+        // Affiche ce que l'utilisateur a saisi
+        System.out.println("Vous avez saisi : " + saisie);
+
+        // Fermer le scanner (bonne pratique)
+        scanner.close();
     }
 }
