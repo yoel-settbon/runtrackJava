@@ -1,4 +1,4 @@
-package day01.job01;
+package day01.job00;
 public class Main {
     public static void main(String[] args) {
         char lettre = 'A';
